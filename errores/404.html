@@ -2,24 +2,20 @@
   <head>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Fira+Sans')
-/*Variables*/
 $background_color: #353b48
 $font: "Fira Sans", sans-serif
 $white: #f5f6fa
 $black: #0C0E10
 $gray: #202425
 $blue: #446182
-//Mixins
 =smallscreens
     @media (max-width: 770px)
         @content
-//Extends
 %Ycenter
     position: absolute
     top: 50%
     transform: translateY(-50%)
-//Main Layout Styles
-*
+	    
     box-sizing: border-box
 
 html, body
@@ -58,7 +54,7 @@ body
         padding-bottom: 0vh
 .left-section, .right-section
     position: relative
-//Left Section Styles
+
 .left-section
     width: 40%
     +smallscreens
@@ -93,7 +89,7 @@ body
         font-size: 1.3em
         line-height: 1.15
         max-width: 100%
-//Right Section Styles
+
 .right-section
     width: 50%
     +smallscreens
